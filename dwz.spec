@@ -8,7 +8,7 @@ Group: Development/Tools
 # git archive --format=tar --remote=git://sourceware.org/git/dwz.git \
 #   --prefix=dwz-%{version}/ dwz-%{version} \
 #   | bzip2 -9 > dwz-%{version}.tar.bz2
-Source: dwz-%{version}.tar.bz2
+Source: https://github.com/NewsCentOS7/dwz/raw/refs/heads/main/dwz-%{version}.tar.bz2
 BuildRequires: elfutils-libelf-devel
 %{?scl:Requires:%scl_runtime}
 
